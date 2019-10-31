@@ -17,6 +17,8 @@ Plug 'arzg/vim-substrata'
 
 Plug 'arcticicestudio/nord-vim'
 
+Plug 'mboughaba/i3config.vim'
+
 " end plugins
 call plug#end()
 
