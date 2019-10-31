@@ -202,6 +202,9 @@ default_border normal 1
 # fonts
 font pango:Source Code Pro 10
 
+# set background
+exec --no-startup-id xsetroot -solid "#2E3440"
+
 # colors
 set_from_resource $bg i3wm.background #2E3440
 set_from_resource $bgf i3wm.fadeColor #4C566A
@@ -233,3 +236,5 @@ bar {
 	font pango:DejaVu Sans Mono 17
 	tray_output none
 }
+bindsym $mod+Shift+b bar mode dock
+bindsym $mod+Control+b bar mode invisible
