@@ -206,21 +206,32 @@ font pango:Source Code Pro 10
 exec --no-startup-id xsetroot -solid "#2E3440"
 
 # colors
-set_from_resource $bg i3wm.background #2E3440
-set_from_resource $bgf i3wm.fadeColor #4C566A
-set_from_resource $bgu i3wm.color0 #3B4252
-set_from_resource $fg i3wm.foreground #D8DEE9
-set_from_resource $fgf i3wm.color6 #D8DEE9
-set_from_resource $bord i3wm.color14 #8FBCBB
-set_from_resource $cbord i3wm.color1 #BF616A
-set_from_resource $ind i3wm.color5 #B48EAD
+set $base00 #797979
+set $base01 #727272
+set $base02 #d7d5d6
+set $base03 #565656
+set $base04 #000000
+set $base05 #232323
+set $base06 #ccccff
+set $base07 #53495d
+set $base08 #523051
+set $base09 #523051
+set $base0A #662020
+set $base0B #1f3e58
+set $base0C #352149
+set $base0D #345849
+set $base0E #5c0038
+set $base0F #3c071b
 
-# class			border	bg	text	indic	child_border
-client.focused		$bord	$bgf	$fg	$ind	$bgf	
-client.focused_inactive	$bgf	$bgu	$fgf	$ind	$bgu
-client.unfocused	$bgf	$bgu	$fgf	$ind	$bgu
-client.urgent		$bord	$bg	$fg	$ind	$bg	
-client.placeholder	$bord	$bg	$fg	$ind	$bg	
+# Basic color configuration using the Base16 variables for windows and borders.
+# Property Name         Border  BG      Text    Indicator Child Border
+client.focused          $base08 $base07 $base00 $base0E $base08
+client.focused_inactive $base01 $base01 $base05 $base01 $base01
+client.unfocused        $base01 $base00 $base05 $base01 $base01
+client.urgent           $base0A $base0A $base00 $base0A $base0A
+client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.background       $base07
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
