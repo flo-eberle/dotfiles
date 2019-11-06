@@ -1,3 +1,5 @@
+set nocompatible
+
 " plugins
 call plug#begin('~/.vim/plugged')
 
@@ -44,7 +46,15 @@ let g:vimwiki_list = [{'path': '~/Documents/wiki',
 " custom bindings
 "----------------------------------------
 
+" unmap space first
+nnoremap <space> <Nop>
+" map leader to SPACE
+let mapleader="\<Space>"
 " uppercase word in insert mode
 inoremap <c-U> <esc>viwUi
 " uppercase word in normal mode
 nnoremap <c-U> viwU
+" move line downward
+nnoremap <leader>- ddp
+" move line upward
+nnoremap <leader>_ ddkP
