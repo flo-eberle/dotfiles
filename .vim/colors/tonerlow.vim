@@ -2,51 +2,64 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Tonerlow scheme by Florian Eberle
 
-" This enables the coresponding base16-shell script to run so that
-" :colorscheme works in terminals supported by base16-shell scripts
-" User must set this variable in .vimrc
-"   let g:base16_shell_path=base16-builder/output/shell/
-if !has("gui_running")
-  if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-tonerlow.sh"
-  endif
-endif
+" *startcolors*
+
+" scheme: tonerlow
+" author: Flo Eberle
+
+let s:base00 = "797979"
+let s:base01 = "727272"
+let s:base02 = "d7d5d6"
+let s:base03 = "565656"
+let s:base04 = "000000"
+let s:base05 = "232323"
+let s:base06 = "ccccff"
+let s:base07 = "53495d"
+let s:base08 = "523051"
+let s:base09 = "523051"
+let s:base0A = "662020"
+let s:base0B = "1f3e58"
+let s:base0C = "352149"
+let s:base0D = "345849"
+let s:base0E = "5c0038"
+let s:base0F = "3c071b"
+
+" *endcolors*
 
 " GUI color definitions
-let s:gui00        = "797979"
-let g:base16_gui00 = "797979"
-let s:gui01        = "727272"
-let g:base16_gui01 = "727272"
-let s:gui02        = "d7d5d6"
-let g:base16_gui02 = "d7d5d6"
-let s:gui03        = "565656"
-let g:base16_gui03 = "565656"
-let s:gui04        = "000000"
-let g:base16_gui04 = "000000"
-let s:gui05        = "232323"
-let g:base16_gui05 = "232323"
-let s:gui06        = "ccccff"
-let g:base16_gui06 = "ccccff"
-let s:gui07        = "53495d"
-let g:base16_gui07 = "53495d"
-let s:gui08        = "523051"
-let g:base16_gui08 = "523051"
-let s:gui09        = "523051"
-let g:base16_gui09 = "523051"
-let s:gui0A        = "662020"
-let g:base16_gui0A = "662020"
-let s:gui0B        = "1f3e58"
-let g:base16_gui0B = "1f3e58"
-let s:gui0C        = "352149"
-let g:base16_gui0C = "352149"
-let s:gui0D        = "345849"
-let g:base16_gui0D = "345849"
-let s:gui0E        = "5c0038"
-let g:base16_gui0E = "5c0038"
-let s:gui0F        = "3c071b"
-let g:base16_gui0F = "3c071b"
+let s:gui00        = s:base00
+let g:base16_gui00 = s:base00
+let s:gui01        = s:base01
+let g:base16_gui01 = s:base01
+let s:gui02        = s:base02
+let g:base16_gui02 = s:base02
+let s:gui03        = s:base03
+let g:base16_gui03 = s:base03
+let s:gui04        = s:base04
+let g:base16_gui04 = s:base04
+let s:gui05        = s:base05
+let g:base16_gui05 = s:base05
+let s:gui06        = s:base06
+let g:base16_gui06 = s:base06
+let s:gui07        = s:base07
+let g:base16_gui07 = s:base07
+let s:gui08        = s:base08
+let g:base16_gui08 = s:base08
+let s:gui09        = s:base09
+let g:base16_gui09 = s:base09
+let s:gui0A        = s:base0A
+let g:base16_gui0A = s:base0A
+let s:gui0B        = s:base0B
+let g:base16_gui0B = s:base0B
+let s:gui0C        = s:base0C
+let g:base16_gui0C = s:base0C
+let s:gui0D        = s:base0D
+let g:base16_gui0D = s:base0D
+let s:gui0E        = s:base0E
+let g:base16_gui0E = s:base0E
+let s:gui0F        = s:base0F
+let g:base16_gui0F = s:base0F
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -101,7 +114,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-tonerlow"
+let g:colors_name = "tonerlow"
 
 
 " Highlighting function
@@ -368,3 +381,4 @@ delf <sid>hi
 " Remove color variables
 unlet s:gui00 s:gui01 s:gui02 s:gui03  s:gui04  s:gui05  s:gui06  s:gui07  s:gui08  s:gui09 s:gui0A  s:gui0B  s:gui0C  s:gui0D  s:gui0E  s:gui0F
 unlet s:cterm00 s:cterm01 s:cterm02 s:cterm03 s:cterm04 s:cterm05 s:cterm06 s:cterm07 s:cterm08 s:cterm09 s:cterm0A s:cterm0B s:cterm0C s:cterm0D s:cterm0E s:cterm0F
+unlet s:base00 s:base01 s:base02 s:base03 s:base04 s:base05 s:base06 s:base07 s:base08 s:base09 s:base0A s:base0B s:base0C s:base0D s:base0E s:base0F

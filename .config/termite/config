@@ -45,6 +45,8 @@ scrollback_lines = 10000
 # License:    MIT
 
 [colors]
+# *startcolors*
+
 # Base16 Tonerlow
 # Author: Florian Eberle
 
@@ -94,33 +96,7 @@ color19 = #d7d5d6
 color20 = #000000
 color21 = #ccccff
 
-
-# [colors]
-# cursor = #d8dee9
-# cursor_foreground = #2e3440
-
-# foreground = #d8dee9
-# foreground_bold = #d8dee9
-# background = #2e3440
-
-# highlight = #4c566a
-
-# color0  = #3b4252
-# color1  = #bf616a
-# color2  = #a3be8c
-# color3  = #ebcb8b
-# color4  = #81a1c1
-# color5  = #b48ead
-# color6  = #88c0d0
-# color7  = #e5e9f0
-# color8  = #4c566a
-# color9  = #bf616a
-# color10 = #a3be8c
-# color11 = #ebcb8b
-# color12 = #81a1c1
-# color13 = #b48ead
-# color14 = #8fbcbb
-# color15 = #eceff4
+# *endcolors*
 
 [hints]
 #font = Monospace 12

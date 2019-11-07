@@ -1,3 +1,4 @@
+! *startcolors*
 ! Base16 Tonerlow
 ! Scheme: Florian Eberle
 
@@ -17,6 +18,8 @@
 #define base0D #345849
 #define base0E #5c0038
 #define base0F #3c071b
+
+! *endcolors*
 
 *foreground:   base05
 #ifdef background_opacity

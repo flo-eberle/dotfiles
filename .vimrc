@@ -35,7 +35,7 @@ set expandtab		" insert spaces instead of tab
 " Colorscheme
 set background=dark
 set termguicolors
-colorscheme base16-tonerlow
+colorscheme tonerlow
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/Documents/wiki',
@@ -51,9 +51,9 @@ nnoremap <space> <Nop>
 " map leader to SPACE
 let mapleader="\<Space>"
 " uppercase word in insert mode
-inoremap <c-U> <esc>viwUi
+inoremap <c-U> <esc>viwUi<esc>ea
 " uppercase word in normal mode
-nnoremap <c-U> viwU
+nnoremap <c-U> viwUe
 " move line downward
 nnoremap <leader>- ddp
 " move line upward
@@ -66,3 +66,6 @@ nnoremap <c-l> <c-w><c-l>
 " edit & source .vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+" enclose in quotes
+nnoremap <leader>' viw<Esc>a'<Esc>Bi'<Esc>E
+nnoremap <leader>" viw<Esc>a"<Esc>Bi"<Esc>E

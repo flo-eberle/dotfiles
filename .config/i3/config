@@ -206,22 +206,23 @@ font pango:Source Code Pro 10
 exec --no-startup-id xsetroot -solid "#2E3440"
 
 # colors
-set $base00 #797979
-set $base01 #727272
-set $base02 #d7d5d6
-set $base03 #565656
-set $base04 #000000
-set $base05 #232323
-set $base06 #ccccff
-set $base07 #53495d
-set $base08 #523051
-set $base09 #523051
-set $base0A #662020
-set $base0B #1f3e58
-set $base0C #352149
-set $base0D #345849
-set $base0E #5c0038
-set $base0F #3c071b
+# set_from_resource $bg i3wm.background #2E3440
+set_from_resource $base00 i3wm.color0 #797979
+set_from_resource $base01 i3wm.color18 #727272
+set_from_resource $base02 i3wm.color19 #d7d5d6
+set_from_resource $base03 i3wm.color8 #565656
+set_from_resource $base04 i3wm.color20 #000000
+set_from_resource $base05 i3wm.color7 #232323
+set_from_resource $base06 i3wm.color21 #ccccff
+set_from_resource $base07 i3wm.color15 #53495d
+set_from_resource $base08 i3wm.color9 #523051
+set_from_resource $base09 i3wm.color16 #523051
+set_from_resource $base0A i3wm.color11 #662020
+set_from_resource $base0B i3wm.color10 #1f3e58
+set_from_resource $base0C i3wm.color14 #352149
+set_from_resource $base0D i3wm.color12 #345849
+set_from_resource $base0E i3wm.color13 #5c0038
+set_from_resource $base0F i3wm.color17 #3c071b
 
 # Basic color configuration using the Base16 variables for windows and borders.
 # Property Name         Border  BG      Text    Indicator Child Border
