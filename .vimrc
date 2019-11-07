@@ -58,3 +58,11 @@ nnoremap <c-U> viwU
 nnoremap <leader>- ddp
 " move line upward
 nnoremap <leader>_ ddkP
+" split navigations
+nnoremap <c-h> <c-w><c-h>
+nnoremap <c-j> <c-w><c-j>
+nnoremap <c-k> <c-w><c-k>
+nnoremap <c-l> <c-w><c-l>
+" edit & source .vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
