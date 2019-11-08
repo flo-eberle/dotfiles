@@ -55,7 +55,7 @@ font-2 = FontAwesome5Brands:style=Solid:pixelsize=10:antialias=true:0
 
 modules-left = i3
 modules-center = titlehook
-modules-right = xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date
+modules-right = pacman xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date
 
 tray-position = right
 tray-padding = 2
@@ -84,6 +84,14 @@ hook-1 = ~/i3flow/i3flow_displaytitle.py switch
 hook-2 = echo hook3
 initial = 1
 
+[module/pacman]
+type = custom/script
+exec = ~/.config/polybar/scripts/pacman_status
+interval = 3600
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+click-left = ~/.config/polybar/scripts/pacman_status
 
 [module/xkeyboard]
 type = internal/xkeyboard
