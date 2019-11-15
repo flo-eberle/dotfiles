@@ -1,23 +1,24 @@
 ! *startcolors*
-! Base16 Tonerlow
-! Scheme: Florian Eberle
 
-#define base00 #797979
-#define base01 #727272
-#define base02 #d7d5d6
-#define base03 #565656
-#define base04 #000000
-#define base05 #232323
-#define base06 #ccccff
-#define base07 #53495d
-#define base08 #523051
-#define base09 #523051
-#define base0A #662020
-#define base0B #1f3e58
-#define base0C #352149
-#define base0D #345849
-#define base0E #5c0038
-#define base0F #3c071b
+! scheme: tonerlow
+! author: Flo Eberle
+
+#define base00 #2e313d
+#define base01 #4B4D63
+#define base02 #323343
+#define base03 #62738A
+#define base04 #8296b0
+#define base05 #B5B4C9
+#define base06 #BEBED0
+#define base07 #737996
+#define base08 #5b5f71
+#define base09 #AE81FF
+#define base0A #DB6DAF
+#define base0B #898599
+#define base0C #a0b9d8
+#define base0D #c6aed7
+#define base0E #7dc2c7
+#define base0F #f0ecfe
 
 ! *endcolors*
 

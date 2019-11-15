@@ -17,6 +17,8 @@ Plug 'mboughaba/i3config.vim'
 
 Plug 'vimwiki/vimwiki'
 
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+
 " end plugins
 call plug#end()
 
@@ -34,13 +36,17 @@ set expandtab		" insert spaces instead of tab
 
 " Colorscheme
 set background=dark
-set termguicolors
+let base16colorspace=256  " Access colors present in 256 colorspace"
+" set termguicolors
 colorscheme tonerlow
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/Documents/wiki',
 		      \ 'path_html': '~/Documents/wiki_html',
 		      \ 'syntax': 'markdown', 'ext': '.md'}]
+
+" vim-instant-markdown
+let g:instant_markdown_browser = "qutebrowser --target tab"
 
 "----------------------------------------
 " custom bindings
