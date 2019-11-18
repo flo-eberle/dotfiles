@@ -39,6 +39,7 @@ set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace"
 " set termguicolors
 colorscheme tonerlow
+highlight Comment cterm=italic gui=italic
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/Documents/wiki',
@@ -52,26 +53,37 @@ let g:instant_markdown_browser = "qutebrowser --target tab"
 " custom bindings
 "----------------------------------------
 
+" remap leader to spacebar
 " unmap space first
 nnoremap <space> <Nop>
 " map leader to SPACE
 let mapleader="\<Space>"
-" uppercase word in insert mode
-inoremap <c-U> <esc>viwUi<esc>ea
-" uppercase word in normal mode
-nnoremap <c-U> viwUe
-" move line downward
-nnoremap <leader>- ddp
-" move line upward
-nnoremap <leader>_ ddkP
+
+" edit & source .vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+
 " split navigations
 nnoremap <c-h> <c-w><c-h>
 nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
-" edit & source .vimrc
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" TODO: this should probably be a mapping local to filetype python
+" run current file with python
+nnoremap <leader>pp :!python %<cr>
+
+" TODO: check behaviour on first/last line
+" move line downward
+nnoremap <leader>- ddp
+" move line upward
+nnoremap <leader>_ ddkP
+
+" uppercase word in insert mode
+inoremap <c-U> <esc>viwUi<esc>ea
+" uppercase word in normal mode
+nnoremap <c-U> viwUe
+
 " enclose in quotes
 nnoremap <leader>' viw<Esc>a'<Esc>Bi'<Esc>E
 nnoremap <leader>" viw<Esc>a"<Esc>Bi"<Esc>E

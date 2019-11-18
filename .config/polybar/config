@@ -91,8 +91,9 @@ interval = 3600
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-; click-left = echo "hello there"
-click-left = ~/.config/polybar/scripts/pacman_status
+click-left = echo "hello there"
+; click-left = echo left %counter%
+; click-left = exec ~/.config/polybar/scripts/pacman_test
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -313,7 +314,8 @@ battery = BAT1
 adapter = ACAD
 full-at = 98
 
-format-charging = <ramp-capacity> <label-charging>
+format-charging =  <label-charging>
+format-charging-foreground = ${colors.foreground-alt}
 format-discharging = <ramp-capacity> <label-discharging>
 label-charging = %percentage%
 label-discharging = %percentage%
@@ -327,6 +329,7 @@ ramp-capacity-2 = 
 ramp-capacity-3 =   
 ; ramp-capacity-4 = #3
 ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0-foreground = ${colors.primary}
 
 animation-charging-0 = #1
 animation-charging-1 = #2
