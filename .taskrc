@@ -34,3 +34,4 @@ include /home/flo/.task/connection.config
 
 # sort by project as well in task ls
 report.ls.sort=start-,project+,description+
+weekstart=Monday
