@@ -34,4 +34,23 @@ include /home/flo/.task/connection.config
 
 # sort by project as well in task ls
 report.ls.sort=start-,project+,description+
+
+# urgency coefficients
+urgency.user.tag.next.coefficient=          15.0 # 15.0 +next tag
+urgency.due.coefficient=                    12.0 # 12.0 overdue or near due date
+urgency.blocking.coefficient=                5.0 #  8.0 blocking other tasks
+urgency.uda.priority.H.coefficient=          6.0 #  6.0 high Priority
+urgency.uda.priority.M.coefficient=          3.9 #  3.9 medium Priority
+urgency.uda.priority.L.coefficient=          1.8 #  1.8 low Priority
+urgency.scheduled.coefficient=               5.0 #  5.0 scheduled tasks
+urgency.active.coefficient=                  4.0 #  4.0 already started tasks
+urgency.age.coefficient=                     2.0 #  2.0 coefficient for age
+urgency.annotations.coefficient=             1.0 #  1.0 has annotations
+urgency.tags.coefficient=                    1.0 #  1.0 has tags
+urgency.project.coefficient=                 1.0 #  1.0 assigned to any project
+urgency.waiting.coefficient=                 -3.0 # -3.0 waiting task
+urgency.blocked.coefficient=                 -5.0 # -5.0 blocked by other tasks
+
+
+# miscelaneous settings
 weekstart=Monday
