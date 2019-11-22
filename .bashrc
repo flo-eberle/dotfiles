@@ -119,3 +119,7 @@ eval "`dircolors -b $DIR_COLORS`"
 # flo
 bind 'set mark-symlinked-directories on'
 export PS1="[\[\e[0;36m\]\u\[\e[m\]] \W > "
+
+# set EDITOR to vim
+export VISUAL=/usr/bin/vim
+export EDITOR=/usr/bin/vim

@@ -1,0 +1,10 @@
+
+# alias for dotfiles repo. just use config instead of git anywhere in home dir
+alias config='/usr/bin/git --git-dir=/home/flo/.cfg/ --work-tree=/home/flo'
+
+# config file aliases
+alias zshrc='$EDITOR ~/.zshrc'
+alias vimrc='$EDITOR ~/.vimrc'
+
+# i3flow aliases
+alias down='/home/flo/i3flow/scripts/daily_sync_routine'

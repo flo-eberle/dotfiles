@@ -59,6 +59,12 @@ nnoremap <space> <Nop>
 " map leader to SPACE
 let mapleader="\<Space>"
 
+" copy to and paste from clipboard via xclip
+" requires xclip
+nnoremap <leader>yy :.w !xclip -selection clipboard<cr><cr>
+nnoremap <leader>p :r!xclip -o -selection clipboard<cr>
+
+
 " edit & source .vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>

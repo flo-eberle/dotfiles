@@ -1,8 +1,14 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/flo/.oh-my-zsh"
 
+# set EDITOR to vim
+export VISUAL=/usr/bin/vim
+export EDITOR=/usr/bin/vim
+
+# set the theme
 ZSH_THEME="robbyrussell"
 
+# plugins
 plugins=(
     git
     last-working-dir
@@ -13,8 +19,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# alias for dotfiles repo. just use config instead of git anywhere in home dir
-alias config='/usr/bin/git --git-dir=/home/flo/.cfg/ --work-tree=/home/flo'
-# config file aliases
-alias zshrc='$EDITOR ~/.zshrc'
-alias vimrc='$EDITOR ~/.vimrc'
+# aliases in separate file - .zshrc_aliases
+if [ -f .zshrc_aliases ]; then
+    source .zshrc_aliases
+fi
