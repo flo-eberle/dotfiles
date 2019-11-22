@@ -86,14 +86,14 @@ initial = 1
 
 [module/pacman]
 type = custom/script
-exec = ~/.config/polybar/scripts/pacman_status
-interval = 3600
+exec = ~/i3flow/polybar_scripts/pacman_status
+interval = 600
 
+format = <label>
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-click-left = echo "hello there"
-; click-left = echo left %counter%
-; click-left = exec ~/.config/polybar/scripts/pacman_test
+
+label = %output%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -165,17 +165,6 @@ format-prefix-foreground = ${colors.foreground-alt}
 format = <label> 
 label = %percentage%
 
-; bar-width = 10
-; bar-indicator = |
-; bar-indicator-foreground = #fff
-; bar-indicator-font = 2
-; bar-fill = ─
-; bar-fill-font = 2
-; bar-fill-foreground = #9f78e1
-; bar-empty = ─
-; bar-empty-font = 2
-; bar-empty-foreground = ${colors.foreground-alt}
-
 [module/backlight-acpi]
 inherit = module/xbacklight
 type = internal/backlight
@@ -244,10 +233,6 @@ date-alt = " %d-%m-%Y"
 time = %H:%M
 time-alt = 
 
-; format-prefix = #
-; format-prefix-foreground = ${colors.foreground-alt}
-; format-underline = #0a6cf5
-
 label = %date% %time%
 
 [module/pulseaudio]
@@ -263,85 +248,30 @@ format-muted-prefix = " "
 label-muted = %percentage% 
 format-muted-prefix-foreground = ${colors.foreground-alt}
 
-; bar-volume-width = 10
-; bar-volume-foreground-0 = #55aa55
-; bar-volume-foreground-1 = #55aa55
-; bar-volume-foreground-2 = #55aa55
-; bar-volume-foreground-3 = #55aa55
-; bar-volume-foreground-4 = #55aa55
-; bar-volume-foreground-5 = #f5a70a
-; bar-volume-foreground-6 = #ff5555
-; bar-volume-gradient = false
-; bar-volume-indicator = |
-; bar-volume-indicator-font = 2
-; bar-volume-fill = ─
-; bar-volume-fill-font = 2
-; bar-volume-empty = ─
-; bar-volume-empty-font = 2
-; bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[module/alsa]
-type = internal/alsa
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
-
-format-muted-prefix = "# "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
-
 [module/battery]
 type = internal/battery
 battery = BAT1
 adapter = ACAD
 full-at = 98
 
-format-charging =  <label-charging>
-format-charging-foreground = ${colors.foreground-alt}
+format-charging = <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
+
 label-charging = %percentage%
 label-discharging = %percentage%
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
-;         
+
+format-charging-prefix = " "
+format-charging-prefix-foreground = ${colors.foreground-alt}
+
 ramp-capacity-0 = 
 ramp-capacity-1 =   
 ramp-capacity-2 =   
 ramp-capacity-3 =   
-; ramp-capacity-4 = #3
 ramp-capacity-foreground = ${colors.foreground-alt}
 ramp-capacity-0-foreground = ${colors.primary}
-
-animation-charging-0 = #1
-animation-charging-1 = #2
-animation-charging-2 = #3
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-animation-discharging-0 = #1
-animation-discharging-1 = #2
-animation-discharging-2 = #3
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
 
 [module/temperature]
 type = internal/temperature

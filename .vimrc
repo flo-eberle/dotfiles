@@ -85,6 +85,7 @@ inoremap <c-U> <esc>viwUi<esc>ea
 nnoremap <c-U> viwUe
 
 " enclose in quotes
-nnoremap <leader>' viw<Esc>a'<Esc>Bi'<Esc>E
+nnoremap <leader>' Ea'<esc>Bi'<esc>E
+" nnoremap <leader>' viw<Esc>a'<Esc>Bi'<Esc>E
 nnoremap <leader>" viw<Esc>a"<Esc>Bi"<Esc>E
 nnoremap <leader>` viw<Esc>a`<Esc>Bi`<Esc>E
