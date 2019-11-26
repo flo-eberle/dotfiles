@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/flo/.oh-my-zsh"
 
+stty -ixon
+
 # set EDITOR to vim
 export VISUAL=/usr/bin/vim
 export EDITOR=/usr/bin/vim
